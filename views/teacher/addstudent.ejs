@@ -1,0 +1,33 @@
+<a href="/teacher/option" class="btn btn-primary" style="margin-top:5px;">Back</a>
+<h4>Add Student-Result</h4>
+
+
+<form method="POST" class="addstudent" autocomplete="off" id="addstudent">
+    <div class="mb-3">
+      <label  class="form-label">Roll No. : </label>
+      <input type="number" name="roll" required class="form-control">
+    </div>
+    <% if (roll) { %>
+      <span class="text-danger"> <%=roll %></span>
+    <% } %>
+
+    <div class="mb-3">
+        <label  class="form-label">Name : </label>
+        <input type="text" name="name" required class="form-control">
+      </div>
+      
+      <div class="mb-3">
+        <label  class="form-label">Date of Birth : </label>
+        <input type="date" name="dob" required class="form-control">
+      </div>
+      <div class="mb-3">
+        <label  class="form-label">Score : </label>
+        <input type="number" name="score" required class="form-control">
+      </div>
+    <button type="submit" class="btn btn-primary">Add</button>
+    <a href="/teacher/viewall" class="btn btn-primary">View All</a>
+</form>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/js/custom.js"></script>

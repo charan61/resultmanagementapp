@@ -1,0 +1,99 @@
+.teacherLogin {
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body{
+    margin-left: 10px;
+  }
+  .navbar{
+    background-color: rgb(78, 75, 248);
+    margin-left: -10px;    
+  }
+  .navbar-brand{
+   color:white ;
+   font-weight: bold;
+   margin-left: 40%;
+  }
+  .text{
+    margin-left: 47%;
+    margin-top: 60px;
+    font-weight: bold;
+    margin-bottom: -10px;
+  }
+  
+  .optionDiv {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .optionDiv button {
+    margin: 0px 100px;  
+  }
+ 
+ 
+  .teachForm input {
+    width: 300px;
+  }
+  .tableDiv {
+    margin: 10px 200px;  
+    padding: 60px 40px;
+    border-radius: 10px;
+  }
+  .table {
+    text-align: center;
+  }
+  
+  .stuTable {
+    border-width: 2px;
+    padding: 60px 40px;
+    border-radius: 10px;
+    margin: 0px 200px;
+    margin-bottom: 50px;
+  }
+
+  .teachForm {    
+    padding: 60px 40px;
+    border-radius: 10px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+
+
+  h4 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;  
+    margin-bottom: -40px;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  .btn{
+    margin-right: 30px;  
+    font-weight: bold;
+  }
+  h3{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;  
+    text-align: center;  
+  }
+
+  .addstudent {
+    border-width: 2px;
+    padding: 60px 40px;
+    border-radius: 10px;
+    margin: 0 300px;
+  }
+ 
+
+  .error{
+    font-size: 20px;
+    color: red;
+    margin-top: 20px;
+    margin-left: 10px;
+  }

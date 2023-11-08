@@ -1,0 +1,33 @@
+<a href="/teacher/option" class="btn btn-primary" style="margin-top:5px;">Back</a>
+<h4 >All Students</h4>
+<div class="tableDiv">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Roll No.</th>
+        <th scope="col">Name</th>       
+        <th scope="col">Date of Birth</th>
+        <th scope="col">Score</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+        <%  student.forEach(element => { %>
+            <tr class="head">
+                <td><%= element.roll %></td>
+                <td><%= element.name %></td>               
+                <td><%= element.dob %></td>
+                <td><%= element.score %></td> 
+                <td>
+                  <a href="/teacher/edit/<%= element._id %> "><img style="margin: 0px 5px;" src="https://img.icons8.com/material-outlined/30/000000/edit.png"/></a>
+                  <a href="/teacher/delete/<%= element._id %> " class="delete" id="deletestudent"><img style="margin: 0px 5px;" src="https://img.icons8.com/ios-glyphs/30/000000/filled-trash.png"/></a>
+                </td>
+              </tr>
+        <%}) %>
+    </tbody>
+  </table>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/js/custom.js"></script>
+

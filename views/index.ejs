@@ -1,0 +1,22 @@
+<p class="text">Login as</p>
+<div class="teacherLogin">
+    
+    <button  type="button" class="btn">
+        <a href="/teacher/login">Teacher Login</a>
+    </button>
+
+
+    <button  type="button" class="btn">
+        <a href="/student/login">Student Login</a>
+    </button>
+</div>
+
+<script type="text/javascript">
+    function preventBack() {
+        window.history.forward(); 
+    }
+      
+    setTimeout("preventBack()", 0);
+      
+    window.onunload = function () { null };
+</script>

@@ -1,0 +1,64 @@
+<a href="/" class="btn btn-primary" style="margin-top:5px;">Back</a>
+<h3>Teacher Login</h3>
+
+
+
+<div class="teacherLogin">
+   <!-- teachForm  -->
+   <form method="POST" class="teachForm needs-validation" novalidate>
+    <div class="mb-3">
+      <label class="form-label">Name : </label>
+      <input type="text" name="name"  class="form-control" required>
+      <% if (errors && errors.name) { %>
+        <span class="text-danger"> <%= errors.name.msg %></span>
+      <% } %>
+      <% if (errs) { %>
+        <span class="text-danger"> <%= errs %></span>
+      <% } %>
+      <div></div>
+      <label class="form-label">Password : </label>
+      <input type="password" name="password"  class="form-control">
+      <% if (errors && errors.password) { %>
+        <span class="text-danger"> <%= errors.password.msg %></span>
+      <% } %>
+      <% if (passworderror) { %>
+        <span class="text-danger"> <%= passworderror %></span>
+      <% } %>
+     <div></div>
+    </div>
+    <a><button type="submit" class="btn btn-primary">Submit</button></a>
+  </form>
+</div>
+
+
+
+<!-- charan -->
+
+
+<!-- <div > -->
+  <!-- teachForm  -->
+  <!-- <form method="POST" class="login needs-validation" id="login" novalidate>
+   <div class="mb-3">
+     <label >Name : </label>
+     <input type="text" name="name" id="name" required>
+   
+
+     <label >Password : </label>
+     <input type="password" name="password">
+    
+   </div>
+   <a><button type="submit" class="btn btn-primary">Submit</button></a>
+ </form>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
